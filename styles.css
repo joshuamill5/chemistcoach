@@ -1,0 +1,338 @@
+</head >
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    background-color: #DCDCDC; /* 0.5 is semi-transparent */
+}
+
+header {
+    background: #000000;
+    padding: 1px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    transition: padding 0.3s;
+    z-index: 99999; /* Ensure header stays on top */
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* This will push the h1 to the center and Worksheet to the right */
+    align-items: center;
+    width: 100%;
+}
+
+.menu-placeholder {
+    flex: 1;
+}
+
+h1 {
+    flex: 1; /* This will give h1 some flexibility to stay in the center */
+    text-align: center; /* Center the text within the h1 element */
+}
+
+.dropdown {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Align the Worksheet button to the right */
+}
+
+
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    font-family: Montserrat;
+    display: none;
+    position: absolute;
+    right: 0; /* Align the dropdown box to the right */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 16px 38px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ensuring the dropdown does not go beyond the header */
+header .dropdown-content {
+    top: 100%; /* Positioning right below the header */
+}
+
+h1 {
+    color: #DCDCDC;
+    font-family: Montserrat;
+}
+
+button {
+    /* Your button styles */
+    transition: opacity 0.3s, visibility 0.3s, height 0.3s;
+    font-family: Montserrat;
+}
+
+.button {
+    background: linear-gradient(to bottom, #ffffff 0%, #d9d9d9 100%);
+    border: none;
+    border-radius: 40px; /* Adjust as needed to match your design */
+    box-shadow: 0 5px #666;
+    color: #222222;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Adjust size as needed */
+    margin: 8px 4px;
+    cursor: pointer;
+    transition-duration: 0.8s;
+    outline: none; /* Removes the outline to match the design of the button */
+    -webkit-user-select: none; /* Prevents text selection */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .button:active {
+        box-shadow: 0 2px #666;
+        transform: translateY(2px); /* Gives a feeling that the button is being pressed */
+    }
+
+.button-text {
+    font-weight: bold;
+    color: #333; /* Adjust color as needed */
+    font-family: Montserrat;
+    text-transform: uppercase; /* Makes the text uppercase */
+}
+
+/* Ensure that your body has no additional margins or paddings */
+body {
+    margin: 0;
+    padding: 0;
+    /* Add other body styles if needed */
+}
+
+
+#navbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-end; /* Align children at the end (bottom) */
+    align-items: center; /* Center children horizontally */
+    background: repeating-linear-gradient( to right, #54A0DA, #02B48F 25%, #337EF8 250%, #337EF8 50%, #F2D70B 50%, #F2D70B 75%, #F2F2F2 75%, #F2F2F2 100% );
+    padding: 10px;
+    padding-top: 100px; /* Add padding at the top if you want to push the content down */
+    box-shadow: none;
+    border-radius: 0;
+    z-index: 10;
+    overflow-y: auto;
+}
+
+
+
+.nav-button {
+    background: linear-gradient(to bottom, #ffffff 0%, #d9d9d9 100%);
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 5px #666; /* Shadow for 3D effect */
+    color: black;
+    padding: 10px 20px;
+    margin: 5px 0; /* Space between buttons */
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Stack buttons vertically */
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    outline: none; /* Removes the outline */
+    -webkit-user-select: none; /* Prevent text selection */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .nav-button:hover {
+        box-shadow: 0 2px #666; /* Shadow adjustment for hover */
+        transform: translateY(-2px); /* Move up slightly on hover */
+    }
+
+    .nav-button:active {
+        box-shadow: 0 2px #666; /* Shadow adjustment for active click */
+        transform: translateY(1px); /* Move down slightly on click */
+    }
+
+.question-button {
+    background: #0EA58F;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 5px #666; /* Shadow for 3D effect */
+    color: black;
+    padding: 10px 20px;
+    margin: 5px 0; /* Space between buttons */
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Stack buttons vertically */
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    outline: none; /* Removes the outline */
+    -webkit-user-select: none; /* Prevent text selection */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .question-button:hover {
+        box-shadow: 0 2px #666; /* Shadow adjustment for hover */
+        transform: translateY(-2px); /* Move up slightly on hover */
+    }
+
+    .question-button:active {
+        box-shadow: 0 2px #666; /* Shadow adjustment for active click */
+        transform: translateY(1px); /* Move down slightly on click */
+    }
+
+/* This is for the intro content */
+
+.intro-content {
+    margin-top: 70px; /* Adjust this value to the height of your header */
+    padding: 10px;
+    background-color: rgba(255, 180, 0, 0.05); /* Background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle depth */
+    position: absolute; /* Positioned absolutely relative to a positioned parent */
+    top: 0; /* Align with the top of the parent/container */
+    bottom: 0; /* Align with the bottom of the parent/container */
+    left: 5%; /* Adjust left to make wider */
+    right: 15%; /* Adjust right to make wider */
+    z-index: 9; /* Ensure it's above other content but below the fixed header */
+    overflow-y: auto; /* Add scroll for overflow content */
+}
+
+/* This is for the answers */
+
+.info-content {
+    display: none; /* Hidden by default */
+    margin-top: 70px; /* Adjust this value to the height of your header */
+    padding: 10px;
+    background-color: #FFFFFF; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    position: absolute; /* Positioned absolutely relative to a positioned parent */
+    top: 0; /* Align with the top of the parent/container */
+    bottom: 0; /* Align with the bottom of the parent/container */
+    left: 5%; /* Adjust left to make wider */
+    right: 15%; /* Adjust right to make wider */
+    z-index: 10; /* Ensure it's above other content but below the fixed header */
+    overflow-y: auto; /* Add scroll for overflow content */
+}
+
+/* This is for the d**Lingo style quiz questions */
+
+#quiz-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#question-header {
+    margin-bottom: 20px;
+}
+
+#character-speech-bubble {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+    #character-speech-bubble::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -10px;
+        width: 0;
+        height: 0;
+        border-top: 10px solid #fff;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+#answer-options {
+    list-style: none;
+    padding: 0;
+}
+
+.answer, .option {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+    .answer.highlighted, .option.highlighted {
+        background-color: #DDF4FF; /* Highlight color when selected */
+        /* Other styles for highlighted state if necessary */
+    }
+
+
+
+    .answer:active, .option:active {
+        box-shadow: 0 2px #666; /* Shadow adjustment for active click */
+        transform: translateY(1px); /* Move down slightly on click */
+        background-color: #DDF4FF; /* Highlight color when selected */
+    }
+
+
+#answer-options .check {
+    background: #58CC02;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 5px #666; /* Shadow for 3D effect */
+    color: black;
+    padding: 10px 20px;
+    margin: 5px 0; /* Space between buttons */
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Stack buttons vertically */
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    outline: none; /* Removes the outline */
+    -webkit-user-select: none; /* Prevent text selection */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    #answer-options .check:hover {
+        background-color: #61E002;
+    }

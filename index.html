@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chemist Coach</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            $("#includeHtml").load("model6_3.html");
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#includeHtml2").load("model6_2.html");
+        });
+    </script>
+</head>
+
+
+<header>
+    <div class="header-content">
+        <h1>Chem1 Tutorial Notes</h1>
+        <div class="menu-placeholder"></div> <!-- This is a placeholder to balance the flexbox items -->
+        <div class="dropdown">
+            <button class="dropbtn">Tutorial <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="index.html">Week 6</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+<body>
+
+    <div id="intro" class="intro-content">
+        <br />
+        <h2>Week 6: Concentration</h2>
+
+
+        <h3>Useful resources</h3>
+        <p><a href="https://ptable.com/?lang=en#Properties" target="_blank">Periodic Table</a></p>
+        <p><a href="https://www.desmos.com/scientific" target="_blank">Desmos Scientific Calculator</a></p>
+        <br>
+
+        <h3>Model 1: Concentration</h3>
+        <iframe src="model6_2.html" width="500" height="450"></iframe>
+        <p>
+            Concentration
+            (symbol c) is defined as the number of moles of a substance dissolved in one litre of solution:
+            <br><br />
+            c (mol/L) = n (mol)/ V (L)
+            <br />
+            <br />
+            c1V1 = c2V2
+        </p>
+
+
+
+        <button class="nav-button" data-target="info1">Model 1 Questions</button>
+        <br>
+        <br>
+
+        <h3>Model 2: Concentrations and Dissolution Reactions</h3>
+        <div id="myContainer"></div>
+        <iframe id="iframe" scrolling="no" width="1000" height="500" style="border:none;" src="https://javalab.org/en/dissolution_process_en/" style="display:hidden;"></iframe>
+        <p>
+            From javalab.org
+            <br />
+            <br />
+            When ionic salts are dissolved in water, the solid splits up into cations and anions. For example:
+            <br /><br />
+            NaCl(s) → Na +(aq) + Cl–(aq) (1)
+            <br /><br />
+        </p>
+        <button class="nav-button" data-target="info2">Model 2 Questions</button>
+        <br>
+        <br>
+
+        <h3>Model 3: Concentrations and Titration Reactions</h3>
+        <p>
+            Volumetric analysis is a technique that employs the measurement of volumes to determine
+            quantitatively the amount of a substance in solution. In any reaction, the reaction equation shows
+            the ratio of reacting species. If the concentration of one of the solutions is known, the
+            concentrations of the others can be determined from the volumes used.
+        </p>
+
+        <iframe src="model6_3.html" width="700" height="400"></iframe>
+
+        <br />
+        <div id="container-inner"></div>
+        <iframe id="iframe" scrolling="no" width="1000" height="700" style="border:none;" src="https://javalab.org/en/neutralization_reaction_en/" style="display:hidden;"></iframe>
+        <p>From javalab.org</p>
+        <button class="nav-button" data-target="info3">Model 3 Questions</button>
+    </div>
+
+
+
+    <div id="info1" class="info-content" style="display: none;">
+        <p>
+            <h2>Model 1: Concentration</h2>     
+        <p>
+            Most chemical reactions occur in solution, including almost all of those occurring in our bodies.
+            When dealing with solutions, we measure out volumes instead of weighing out quantities. Volume
+            is related to the number of moles present using the concentration or molarity. Concentration
+            (symbol c) is defined as the number of moles of a substance dissolved in one litre of solution:
+            <br><br />
+            c (mol/L) = n (mol)/ V (L)
+            <br><br />
+            <h3>Critical thinking questions</h3>
+            1. The units of concentration are often written as M. Use the equation above to work out the
+            units of concentration in terms of mol and L.
+            <br />
+            <br />
+            <br />
+            <br />
+            2. What is the concentration of the solution obtained when 0.50 mol of NaCl is dissolved into
+            0.20 L of water?
+            <br />
+            <br />
+            <br />
+            <br />
+            3. The concentration of carbon dioxide in the oceans around Australia is about 0.05 × 10 -3 M.
+            How many moles of CO 2 are present in 3.2 L of seawater?
+            <br />
+            <br />
+            <br />
+            <br />
+            4. What mass of CO 2 does this correspond to?
+            <br />
+            <br />
+            <br />
+            <br />
+            5. A 500. mL solution of HCl with a concentration of 0.10 M is diluted to 1500. mL. What is the
+            new concentration? (Hint: work out the number of moles present.)
+            <br />
+            <br />
+            <br />
+            <br />
+            When dealing with dilutions such as those in questions 5 and 6, a handy trick can be used. If the
+            concentration and volume of the initial solution are c1 and V1 respectively and the concentration
+            and volume of the final solution are c2 and V2 respectively then the number of moles present in
+            each is:
+            <br /><br />
+            moles present initially = n = c1V1
+            <br />
+            moles present in diluted solution = n = c2V2
+            <br /><br />
+            The number of moles is unchanged when a solution is diluted, so n is the same for these two
+            equations. Hence:
+            <br />
+            c1V1 = c2V2
+            <br /><br />
+            7. 300. mL of a 0.25 M solution of NaCl is diluted to 500. mL. What is the new concentration?
+            <br /><br />
+            <br />
+            <br />
+            8. What volume of water must be added to 2.0 L of 5.0 M HCl solution to reduce its
+            concentration to 0.70 M?
+            <br /></br>
+            <br />
+            <br />
+            <br />
+            <button class="nav-button" data-target="info">Overview</button>
+            <button class="nav-button" data-target="info2">Next Model</button>
+        </p>
+
+        
+
+
+    </div>
+
+
+    <div id="info2" class="info-content" style="display: none;">
+        <p>
+            <h2>Model 2: Concentrations and Dissolution Reactions</h2>
+        <p>
+            When ionic salts are dissolved in water, the solid splits up into cations and anions. For example:
+            <br /><br />
+            NaCl(s) → Na +(aq) + Cl–(aq) (1)
+            <br /><br />
+            A solution of NaCl contains equal amounts of Na +(aq) and Cl–(aq). A 0.10 M solution of NaCl is
+            0.10 M in Na +(aq) and 0.10 M in Cl–(aq).
+            <br />
+            When MgCl2(s) dissolves in water, the ionic equation is:
+            <br /><br />
+            MgCl2(s) → Mg 2+(aq) + 2Cl–(aq) (2)
+            <br /><br />
+            A solution of MgCl2 contains twice as much Cl–(aq) as Mg 2+(aq). A 0.10 M solution of MgCl2 is
+            0.10 M in Mg 2+(aq) but 0.20 M in Cl–(aq).
+            <br />
+            When writing concentrations of the species in solution, square brackets are used around the
+            species. For example, in the solutions above:
+            <br />
+            (1) [Na +(aq)] = 0.10 M and [Cl–(aq)] = 0.10 M
+            <br />
+            (2) [Mg 2+(aq)] = 0.10 M and [Cl–(aq)] = 0.20 M
+            <br />
+            <h3>Critical thinking questions</h3>
+        </p>
+        <p>
+            1. Write the ionic equation for the dissolution of the following salts:
+            <br /><br />
+            (a) NaOH(s)
+            <br />
+            (b) Ca(OH)2(s)
+            <br />
+            (c) MgSO 4(s)
+            <br />
+            (d) Na 2SO 4(s)
+            <br />
+            <br />
+            2. A 0.10 M solution of each of these salts is prepared. Write down the concentrations of each
+            of the ions present using the square bracket notation.
+            (a) 0.1 M NaOH(s):
+            <br />
+            (b) 0.1 M Ca(OH)2(s):
+            <br />
+            (c) 0.1 M MgSO 4(s):
+            <br />
+            (d) 0.1 M Na 2SO 4(s):
+            <br />
+            <br />
+            3. How many moles of OH–(aq) are present in the solutions below?
+            <br />
+            (a) 500. mL of a 0.50 M solution of NaOH
+            <br />
+            (b) 25 mL of a 0.10 M solution of Ca(OH)2
+            <br />
+            <br />
+            <br />
+            <button class="nav-button" data-target="info">Overview</button>
+            <button class="nav-button" data-target="info1">Past Model</button>
+            <button class="nav-button" data-target="info3">Next Model</button>
+
+        </p>
+
+    </div>
+
+    <div id="info3" class="info-content" style="display: none;">
+        <h2>Model 3: Concentrations and Titration Reactions</h2>
+        <p>
+            Volumetric analysis is a technique that employs the measurement of volumes to determine
+            quantitatively the amount of a substance in solution. In any reaction, the reaction equation shows
+            the ratio of reacting species. If the concentration of one of the solutions is known, the
+            concentrations of the others can be determined from the volumes used.
+            <br />
+        </p>
+        <p>
+            <h3>Critical thinking questions</h3>
+        </p>
+
+        <p>
+            To work out the concentration of different table vinegars, a food chemist reacts a solution of brand
+            A with 25 mL of a 0.100 M stock NaOH solution. Vinegar is CH3COOH and it reacts with OH- as
+            below:
+            <br />
+            <br />
+            CH3COOH(aq) + OH–(aq) → CH3CO 2–(aq) + H2O(l)
+            <br />
+            <br />
+            1. What is the concentration of OH–(aq) in the stock NaOH solution? (Hint: remember to use
+            the square bracket notation.)
+            <br /><br />
+            2. How many moles of OH–(aq) are present in 25 mL?
+            <br /><br />
+            3. In the experiment, the food chemist needs 28 mL of vinegar to completely react with the
+            hydroxide solution. From the chemical equation, how many moles of CH3COOH must this
+            volume contain?
+            <br /><br />
+            4. What is the concentration of brand A?
+            <br /><br />
+            5. Brand B claims to have a concentration of 0.10 M. What volume of this vinegar would be
+            needed to completely react with the hydroxide solution if this claim is true?
+            <br /><br />
+            6. To check the results obtained from this analysis, a second laboratory tests the same
+            vinegars using 25 mL of a 0.025 M solution of Ca(OH)2. Using the concentrations you
+            calculated above, work out the volumes of each brand needed to completely react with the
+            calcium hydroxide solution.
+            <br />
+            (a) Brand A
+            <br /><br />
+            (b) Brand B
+            <br /><br />
+            Previous exam question: If 50. mL of a 0.10 M solution of AgNO 3 is mixed with 50. mL of a
+            0.40 M solution of Na 2CO 3, what mass of Ag 2CO 3 will precipitate from the reaction?
+            <br />
+            <br />
+            <br />
+            <button class="nav-button" data-target="info">Overview</button>
+            <button class="nav-button" data-target="info2">Past Model</button>
+        </p>
+    </div>
+
+
+    <div id="content">
+        <div id="navbar">
+            <button class="nav-button" data-target="info">Overview</button>
+            <button class="nav-button" data-target="info1">Model 1</button>
+            <button class="nav-button" data-target="info2">Model 2</button>
+            <button class="nav-button" data-target="info3">Model 3</button>
+        </div>
+
+    </div>
+
+    '
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
