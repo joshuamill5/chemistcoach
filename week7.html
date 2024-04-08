@@ -17,7 +17,15 @@
             $("#includeHtml2").load("model6_2.html");
         });
     </script>  
+    <script type="text/javascript">
+        function passwordProtect() {
+            var password = prompt('Please enter the password you were given in your tutorial to view this page', '');
+            if (password != 'chemistry') {
+                window.location = 'error.html'; // Redirect to another page if the password is wrong
+            }
+        }</script>
 </head>
+
 
 
 <header>
@@ -34,136 +42,205 @@
     </div>
     </div>
 </header>
-<body>
+<body onload="passwordProtect()">
+
+    <!-- Progress Bar -->
+
 
     <div id="intro" class="intro-content">
         <br />
-        <h2>Week 7: Bonding and Shape</h2>
+        <h1>Week 7: Bonding and Shape</h1>
 
         <br>
-        <p><a href="index.html">Week 6</a> | Week 7</p>
+        <p><a href="index.html">Week 6</a> | Week 7 (54% through semester)</p>
         <br>
 
         <h3>Useful resources</h3>
         <p><a href="https://ptable.com/?lang=en#Properties" target="_blank">Periodic Table</a></p>
         <p><a href="https://www.desmos.com/scientific" target="_blank">Desmos Scientific Calculator</a></p>
+        <p><a href="https://molview.org/" target="_blank">MolView - molecular modelling</a></p>
         <br>
 
-        <h3>Model 1: Lewis Structures</h3>
-        <iframe src="model6_2.html" width="500" height="450"></iframe>
+        <h2>Model 1: Lewis Structures</h2>
+        <br>
         <p>
-            Concentration
-            (symbol c) is defined as the number of moles of a substance dissolved in one litre of solution:
-            <br><br />
-            c (mol/L) = n (mol)/ V (L)
-            <br />
-            <br />
-            c1V1 = c2V2
+            Lewis structures are used to model how the electrons are arranged in a covalent molecule. Dots represent electrons
+and a line between two atoms represents a bond that is formed by a pair of electrons.
+        </p>
+        <br>
+        <iframe id="iframe" scrolling="no" width="1000" height="700" style="border:none;" src="https://javalab.org/en/chemical_bonding_en/" style="display:hidden;"></iframe>
+        <p>
+            <b>Figure 1.</b> Interactive Lewis Structure, developed by javalab.org
+
+       <br>
+       </br>
+
+        <h3>Worked example 1.</h3>
+
+        <p>
+            <b>Draw the Lewis Structure of ethene (CH2CH2)</b>
+            <br>
+            <br>
+            <b>Step 1.</b> Count the valence electrons from all the atoms – this can be
+            determined from the Periodic Table. For anions add and for cations
+            subtract the appropriate number of electrons
+            <br>
+            <br>
+            <p>Carbon: 4 valence, Hydrogen: 1 valence</p>
+            <br>
+            <b>Step 2.</b> Assemble the bonding framework. Decide which atoms are connected
+            to each other and use a pair of electrons, represented by a line, to
+            form a bond between each pair.
+            <br>
+            <br>
+            <p>Carbon: 4 bonds, Hydrogen: 1 bond</p>
+            <br>
+           <b>Step 3.</b> Arrange the remaining electrons as lone pairs and/or extra bonds so
+            that each atom has 8 electrons (except H which has 2) including those
+            within the bond.
+            <br>
+            <br>
+            <img src="ethene_dot_structure.png" alt="Ethene Lewis Dot Structure" style="max-width:100%; height:auto;">
+            <br>
+            <b>Step 4.</b> Check for exceptions to the octet rule, and that all other atoms are
+            satisfied. Add the overall charge, if needed. You are now complete!
+            <br>
+            <br>
+            <img src="800px-Ethene-2D-flat.png" alt="Ethene Lewis Dot Structure" style="max-width:20%; height:auto;">
+            
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <h2>Worked example 2.</h2>
+
+        <p>
+            <h3>Draw the Lewis Structure of Iodine tetrachloride (IF<sub>5</sub>) </h3>
+            <br>
+            <br>
+            <iframe width="420" height="275" src="https://www.youtube.com/embed/oGD2Rn5Ux1E" title="IF5 Lewis Structure: How to Draw the Lewis Structure for IF5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <br>
+
+            <img src="electronegativity.jpg" alt="Electronegativity Periodic Table">
+            <p><b>Figure 2.</b> Diagram of electronegativity staircase </p>
+
+
         </p>
 
-        <h4>Worked example</h4>
-        <br>
+
         <br>
         <button class="nav-button" data-target="info1">Model 1 Questions</button>
         <br>
         <br>
 
-        <h3>Model 2: Predicting Molecular Shape</h3>
-        <div id="myContainer"></div>
-        <iframe id="iframe" scrolling="no" width="1000" height="500" style="border:none;" src="https://javalab.org/en/dissolution_process_en/" style="display:hidden;"></iframe>
+        <h3>Model 2: Predicting Molecular Shape</h3>       
+        <br />
+        <div id="container-inner"></div>
+        <iframe src="https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes_en.html"
+        width="800", height="600" allowfullscreen> </iframe>
         <p>
-            From javalab.org
-            <br />
-            <br />
-            When ionic salts are dissolved in water, the solid splits up into cations and anions. For example:
-            <br /><br />
-            NaCl(s) → Na +(aq) + Cl–(aq) (1)
-            <br /><br />
+           
         </p>
+
+        <h4>Worked example 3.</h4>
+        <br>
+        <p><a href="https://molview.org/?cid=222" target="_blank">Interactive 3D structure of ammonia (NH3) </a></p>
+        <br>
         <button class="nav-button" data-target="info2">Model 2 Questions</button>
         <br>
         <br>
+<br>
+<h3>Model 3: Bonding in Organic Molecules</h3>
 
-        <h3>Model 3: Bonding in Organic Molecules</h3>
-        <p>
-            Volumetric analysis is a technique that employs the measurement of volumes to determine
-            quantitatively the amount of a substance in solution. In any reaction, the reaction equation shows
-            the ratio of reacting species. If the concentration of one of the solutions is known, the
-            concentrations of the others can be determined from the volumes used.
-        </p>
 
-        <iframe src="model6_3.html" width="700" height="400"></iframe>
 
-        <br />
-        <div id="container-inner"></div>
-        <iframe id="iframe" scrolling="no" width="1000" height="700" style="border:none;" src="https://javalab.org/en/neutralization_reaction_en/" style="display:hidden;"></iframe>
-        <p>From javalab.org</p>
-        <button class="nav-button" data-target="info3">Model 3 Questions</button>
+<p><a href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Formal_Charges/Formal_Charge" target="_blank">Textbook reading on Formal Charge (a bit advanced)</a></p>
+
+<p>
+
+    <br>
+    <div style="text-align: start;color: rgb(31, 31, 31);background-color: rgb(255, 255, 255);font-size: 14px;">
+        <div style="color: rgb(32, 33, 36);font-size: 22px;">
+            <div>Formula</div>
+        </div>
+    </div>
+    <div style="text-align: start;color: rgb(31, 31, 31);background-color: rgb(255, 255, 255);font-size: 14px;">
+        <div>
+            <div>
+                <div><img alt="FC=V-N-\frac{B}{2}" src="https://www.gstatic.com/education/formulas2/553212783/en/formal_charge.svg"></div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img alt="FC" src="https://www.gstatic.com/education/formulas2/553212783/en/formal_charge_formal_charge_var_1.svg"></td>
+                            <td>=</td>
+                            <td>formal charge</td>
+                        </tr>
+                        <tr>
+                            <td><img alt="V" src="https://www.gstatic.com/education/formulas2/553212783/en/formal_charge_formal_charge_var_2.svg"></td>
+                            <td>=</td>
+                            <td>number of valence electrons</td>
+                        </tr>
+                        <tr>
+                            <td><img alt="N" src="https://www.gstatic.com/education/formulas2/553212783/en/formal_charge_formal_charge_var_3.svg"></td>
+                            <td>=</td>
+                            <td>number of nonbonding valence electrons</td>
+                        </tr>
+                        <tr>
+                            <td><img alt="{B}" src="https://www.gstatic.com/education/formulas2/553212783/en/formal_charge_formal_charge_var_4.svg"></td>
+                            <td>=</td>
+                            <td>total number of electrons shared in bonds</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <h3>Worked example 4.</h3>
+
+    <br>
+    <br>
+    
+
+
+
+      <p>
+        <img src="https://cdn.masterorganicchemistry.com/wp-content/uploads/2022/08/2306-Front-formal-charge-formula.gif" alt="Front of card" width="896" height="596">
+        <img src="https://cdn.masterorganicchemistry.com/wp-content/uploads/2022/08/2306-Reverse-formal-charge-formula.gif" alt="Back of card" width="898" height="594">
+    </p>
+    
+
+
+    <br>
+    <button class="nav-button" data-target="info3">Model 3 Questions</button>
+    <br>
+    <br>
+
+</p>
+
+
+
+
+<br>
+
+
+
     </div>
 
 
 
     <div id="info1" class="info-content" style="display: none;">
         <p>
-            <h2>Model 1: Concentration</h2>     
+            <h2>Model 1: Lewis Structures</h2>     
         <p>
-            Most chemical reactions occur in solution, including almost all of those occurring in our bodies.
-            When dealing with solutions, we measure out volumes instead of weighing out quantities. Volume
-            is related to the number of moles present using the concentration or molarity. Concentration
-            (symbol c) is defined as the number of moles of a substance dissolved in one litre of solution:
-            <br><br />
-            c (mol/L) = n (mol)/ V (L)
-            <br><br />
-            <h3>Critical thinking questions</h3>
-            1. The units of concentration are often written as M. Use the equation above to work out the
-            units of concentration in terms of mol and L.
-            <br />
-            <br />
-            <br />
-            <br />
-            2. What is the concentration of the solution obtained when 0.50 mol of NaCl is dissolved into
-            0.20 L of water?
-            <br />
-            <br />
-            <br />
-            <br />
-            3. The concentration of carbon dioxide in the oceans around Australia is about 0.05 × 10 -3 M.
-            How many moles of CO 2 are present in 3.2 L of seawater?
-            <br />
-            <br />
-            <br />
-            <br />
-            4. What mass of CO 2 does this correspond to?
-            <br />
-            <br />
-            <br />
-            <br />
-            5. A 500. mL solution of HCl with a concentration of 0.10 M is diluted to 1500. mL. What is the
-            new concentration? (Hint: work out the number of moles present.)
-            <br />
-            <br />
-            <br />
-            <br />
-            When dealing with dilutions such as those in questions 5 and 6, a handy trick can be used. If the
-            concentration and volume of the initial solution are c1 and V1 respectively and the concentration
-            and volume of the final solution are c2 and V2 respectively then the number of moles present in
-            each is:
-            <br /><br />
-            moles present initially = n = c1V1
-            <br />
-            moles present in diluted solution = n = c2V2
-            <br /><br />
-            The number of moles is unchanged when a solution is diluted, so n is the same for these two
-            equations. Hence:
-            <br />
-            c1V1 = c2V2
-            <br /><br />
-            7. 300. mL of a 0.25 M solution of NaCl is diluted to 500. mL. What is the new concentration?
-            <br /><br />
-            <br />
-            <br />
-            8. What volume of water must be added to 2.0 L of 5.0 M HCl solution to reduce its
-            concentration to 0.70 M?
+            <img src="Tutorial07model1_Page_1.jpg" alt="tutorial 7 model 1 page 1" style="max-width:100%; height:auto;">
+            <img src="Tutorial07model1_Page_2.jpg" alt="tutorial 7 model 1 page 2" style="max-width:100%; height:auto;">
+        
+         
+           
             <br /></br>
             <br />
             <br />
@@ -180,61 +257,16 @@
 
     <div id="info2" class="info-content" style="display: none;">
         <p>
-            <h2>Model 2: Concentrations and Dissolution Reactions</h2>
+            <h2>Model 2: Predicting molecular shape</h2>
         <p>
-            When ionic salts are dissolved in water, the solid splits up into cations and anions. For example:
-            <br /><br />
-            NaCl(s) → Na +(aq) + Cl–(aq) (1)
-            <br /><br />
-            A solution of NaCl contains equal amounts of Na +(aq) and Cl–(aq). A 0.10 M solution of NaCl is
-            0.10 M in Na +(aq) and 0.10 M in Cl–(aq).
-            <br />
-            When MgCl2(s) dissolves in water, the ionic equation is:
-            <br /><br />
-            MgCl2(s) → Mg 2+(aq) + 2Cl–(aq) (2)
-            <br /><br />
-            A solution of MgCl2 contains twice as much Cl–(aq) as Mg 2+(aq). A 0.10 M solution of MgCl2 is
-            0.10 M in Mg 2+(aq) but 0.20 M in Cl–(aq).
-            <br />
-            When writing concentrations of the species in solution, square brackets are used around the
-            species. For example, in the solutions above:
-            <br />
-            (1) [Na +(aq)] = 0.10 M and [Cl–(aq)] = 0.10 M
-            <br />
-            (2) [Mg 2+(aq)] = 0.10 M and [Cl–(aq)] = 0.20 M
-            <br />
-            <h3>Critical thinking questions</h3>
+            
         </p>
         <p>
-            1. Write the ionic equation for the dissolution of the following salts:
-            <br /><br />
-            (a) NaOH(s)
+            
             <br />
-            (b) Ca(OH)2(s)
-            <br />
-            (c) MgSO 4(s)
-            <br />
-            (d) Na 2SO 4(s)
-            <br />
-            <br />
-            2. A 0.10 M solution of each of these salts is prepared. Write down the concentrations of each
-            of the ions present using the square bracket notation.
-            (a) 0.1 M NaOH(s):
-            <br />
-            (b) 0.1 M Ca(OH)2(s):
-            <br />
-            (c) 0.1 M MgSO 4(s):
-            <br />
-            (d) 0.1 M Na 2SO 4(s):
-            <br />
-            <br />
-            3. How many moles of OH–(aq) are present in the solutions below?
-            <br />
-            (a) 500. mL of a 0.50 M solution of NaOH
-            <br />
-            (b) 25 mL of a 0.10 M solution of Ca(OH)2
-            <br />
-            <br />
+            
+            <img src="Tutorial_Page_3.jpg" alt="tutorial 7 model 1 page 1" style="max-width:100%; height:auto;">
+            <img src="Tutorial_Page_4.jpg" alt="tutorial 7 model 1 page 2" style="max-width:100%; height:auto;">
             <br />
             <button class="nav-button" data-target="info">Overview</button>
             <button class="nav-button" data-target="info1">Past Model</button>
@@ -247,50 +279,13 @@
     <div id="info3" class="info-content" style="display: none;">
         <h2>Model 3: Concentrations and Titration Reactions</h2>
         <p>
-            Volumetric analysis is a technique that employs the measurement of volumes to determine
-            quantitatively the amount of a substance in solution. In any reaction, the reaction equation shows
-            the ratio of reacting species. If the concentration of one of the solutions is known, the
-            concentrations of the others can be determined from the volumes used.
-            <br />
-        </p>
-        <p>
-            <h3>Critical thinking questions</h3>
+            <img src="Tutorial_Page_4.jpg" alt="tutorial 7 model 1 page 1" style="max-width:100%; height:auto;">
+                <img src="Tutorial_Page_5.jpg" alt="tutorial 7 model 1 page 2" style="max-width:100%; height:auto;">
         </p>
 
         <p>
-            To work out the concentration of different table vinegars, a food chemist reacts a solution of brand
-            A with 25 mL of a 0.100 M stock NaOH solution. Vinegar is CH3COOH and it reacts with OH- as
-            below:
-            <br />
-            <br />
-            CH3COOH(aq) + OH–(aq) → CH3CO 2–(aq) + H2O(l)
-            <br />
-            <br />
-            1. What is the concentration of OH–(aq) in the stock NaOH solution? (Hint: remember to use
-            the square bracket notation.)
-            <br /><br />
-            2. How many moles of OH–(aq) are present in 25 mL?
-            <br /><br />
-            3. In the experiment, the food chemist needs 28 mL of vinegar to completely react with the
-            hydroxide solution. From the chemical equation, how many moles of CH3COOH must this
-            volume contain?
-            <br /><br />
-            4. What is the concentration of brand A?
-            <br /><br />
-            5. Brand B claims to have a concentration of 0.10 M. What volume of this vinegar would be
-            needed to completely react with the hydroxide solution if this claim is true?
-            <br /><br />
-            6. To check the results obtained from this analysis, a second laboratory tests the same
-            vinegars using 25 mL of a 0.025 M solution of Ca(OH)2. Using the concentrations you
-            calculated above, work out the volumes of each brand needed to completely react with the
-            calcium hydroxide solution.
-            <br />
-            (a) Brand A
-            <br /><br />
-            (b) Brand B
-            <br /><br />
-            Previous exam question: If 50. mL of a 0.10 M solution of AgNO 3 is mixed with 50. mL of a
-            0.40 M solution of Na 2CO 3, what mass of Ag 2CO 3 will precipitate from the reaction?
+            
+          
             <br />
             <br />
             <br />
@@ -298,6 +293,44 @@
             <button class="nav-button" data-target="info2">Past Model</button>
         </p>
     </div>
+
+
+    <div id="info1" class="info-content" style="display: none;">
+        <div>
+            <h2>Model 1: Lewis Structures</h2>   
+
+        <p>
+            <br>
+            <img src="Tutorial07model1_Page_1.jpg" alt="tutorial 7 model 1 page 1" style="max-width:100%; height:auto;">
+            <img src="Tutorial07model1_Page_2.jpg" alt="tutorial 7 model 1 page 2" style="max-width:100%; height:auto;">
+
+            
+
+            <button class="nav-button" data-target="info">Overview</button>
+            <button class="nav-button" data-target="info2">Next Model</button>
+        </p>
+
+        </div>
+
+        
+        <div id="info2" class="info-content" style="display: none;">
+            <p>
+                <h2>Model 2: Predicting Molecular Shapes</h2>
+            <p>
+                <img src="Tutorial_Page_3.jpg" alt="tutorial 7 model 1 page 1" style="max-width:100%; height:auto;">
+                <img src="Tutorial_Page_4.jpg" alt="tutorial 7 model 1 page 2" style="max-width:100%; height:auto;">
+                <br>
+                  <button class="nav-button" data-target="info">Overview</button>
+            <button class="nav-button" data-target="info1">Past Model</button>
+            <button class="nav-button" data-target="info3">Next Model</button>
+
+        </p>
+        </div>
+
+    </div>
+
+    </div>
+
 
 
     <div id="content">
@@ -309,6 +342,8 @@
         </div>
 
     </div>
+
+    
 
     '
 
