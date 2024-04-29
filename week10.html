@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chemist Coach</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            $("#includeHtml").load("model6_3.html");
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#includeHtml2").load("model6_2.html");
+        });
+    </script>  
+    <script type="text/javascript">
+        function passwordProtect() {
+            var password = prompt('Please enter the password you were given in your tutorial to view this page', '');
+            if (password != 'chem') {
+                window.location = 'error.html'; // Redirect to another page if the password is wrong
+            }
+        }</script>
+</head>
+
+
+
+<header>
+    <div class="header-content">
+        <h1>Chem1011 Tutorial Notes</h1>
+        <div class="menu-placeholder"></div> <!-- This is a placeholder to balance the flexbox items -->
+        <div class="dropdown">
+            <button class="dropbtn">Tutorial <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="index.html">Week 6</a>
+                <a href="week7.html">Week 7</a>
+                <a href="week8.html">Week 8</a>
+                <a href="week9.html">Week 9</a>
+                <a href="week10.html">Week 9</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+<body onload="passwordProtect()">
+
+    <!-- Progress Bar -->
+
+
+    <div id="intro" class="intro-content">
+        <br />
+        <h1>Week 10: Enthalpy Change And Equilibrium</h1>
+
+        <br>
+        <p><a href="index.html">Week 6</a> | <a href="week7.html">Week 7</a>  | <a href="week8.html">Week 8 </a>  | <a href="week9.html">Week 9 </a> | Week 10 </p>
+        <br>
+
+        <h3>Useful resources</h3>
+        <p><a href="https://ptable.com/?lang=en#Properties" target="_blank">Periodic Table</a></p>
+        <p><a href="https://www.desmos.com/scientific" target="_blank">Desmos Scientific Calculator</a></p>
+        <p><a href="https://molview.org/" target="_blank">MolView - molecular modelling</a></p>
+       
+        <br>
+
+        <h2>Model 1: Calculating the Enthalpy of Reaction using Δf H</h2>
+        <br>
+        <p>
+          <p>
+
+            <iframe src="https://phet.colorado.edu/sims/cheerpj/ideal-gas/latest/ideal-gas.html?simulation=reversible-reactions"
+        width="800", height="600" allowfullscreen> </iframe>
+
+            <br>
+            <br>
+
+        </p>
+
+
+        <br>
+        <button class="nav-button" data-target="info1">Model 1 Questions</button>
+        <br>
+        <br>
+
+        
+</p>
+
+
+
+
+<br>
+
+
+
+    </div>
+
+
+
+    <div id="info1" class="info-content" style="display: none;">
+        <p>
+            <h2>Model 1: Calculating the Enthalpy of Reaction using Δf H</h2>     
+        <p>
+            <img src="Week10/Tutorial 10_Page_1.jpg" alt="Ethene Lewis Dot Structure" style="max-width:80%; height:auto;">
+            <img src="Week10/Tutorial 10_Page_2.1.jpg" alt="tutorial 8 model 1 page 1" style="max-width:100%; height:auto;">
+            
+        
+         
+           
+            <br /></br>
+            <br />
+            <br />
+            <br />
+            <button class="nav-button" data-target="info">Overview</button>
+            <button class="nav-button" data-target="info2">Next Model</button>
+        </p>
+
+        
+
+
+    </div>
+
+
+    <div id="info2" class="info-content" style="display: none;">
+        <p>
+            <h2>Model 2: The Equilibrium Constant</h2>
+        <p>
+            
+        </p>
+        <p>
+            
+            <br />
+            
+            <img src="Week10/Tutorial 10_Page_2.jpg" alt="tutorial 8 model 2 page 1" style="max-width:100%; height:auto;">
+            <img src="Week10/Tutorial 10_Page_3.1.jpg" alt="tutorial 8 model 2 page 2" style="max-width:100%; height:auto;">
+            <br />
+            <button class="nav-button" data-target="info">Overview</button>
+            <button class="nav-button" data-target="info3">Next Model</button>
+            
+
+        </p>
+
+    </div>
+
+
+    <div id="info3" class="info-content" style="display: none;">
+        <h2>Model 3: : Enthalpy change of formation (ΔH)</h2>
+        <p>
+            <img src="Week10/Tutorial 10_Page_3.2.jpg" alt="tutorial 8 model 2 page 2" style="max-width:100%; height:auto;">
+            <img src="Week10/Tutorial 10_Page_4.jpg" alt="tutorial 8 model 2 page 2" style="max-width:100%; height:auto;">
+        </p>
+
+        <p>
+   
+            <br />
+            <br />
+            <br />
+            <button class="nav-button" data-target="info">Overview</button>
+            <button class="nav-button" data-target="info2">Past Model</button>
+        </p>
+    </div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="content">
+    <div id="navbar">
+        <button class="nav-button" data-target="info">Overview</button>
+        <button class="nav-button" data-target="info1">Model 1</button>
+        <button class="nav-button" data-target="info2">Model 2</button>
+        <button class="nav-button" data-target="info3">Model 3</button>
+        
+    </div>
+
+</div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
